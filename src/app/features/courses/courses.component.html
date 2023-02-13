@@ -1,0 +1,9 @@
+<app-course-card
+        *ngFor="let mock of mocks"
+        [id]="mock.id"
+        [title]="mock.title"
+        [description]="mock.description"
+        [authors]="mock.authors"
+        [duration]="mock.duration"
+        [date]="mock.creationDate"
+></app-course-card>

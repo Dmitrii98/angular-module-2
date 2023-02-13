@@ -1,0 +1,14 @@
+<app-header [navbar_text]="'Harry Potter'" [button_text]="'Logout'"></app-header>
+<div class="app-root">
+  <div class="container">
+  <app-search [button_text]="'Search'" [placeholder]="'Input text'"></app-search>
+  <app-courses></app-courses>
+   <app-modal
+           [open_modal_button_text]="'Open Modal'"
+           [message]="'Message text'"
+           [title]="'Title'"
+           [okButtonText]="'Ok'"
+           [cancelButtonText]="'Cancel'">
+   </app-modal>
+  </div>
+</div>

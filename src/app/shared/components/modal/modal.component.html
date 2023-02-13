@@ -1,0 +1,18 @@
+<div *ngIf="showModal" class="modal__backdrop">
+    <div class="modal__container">
+        <div class="modal__title">
+            <div>{{title}}</div>
+        </div>
+        <div class="modal__message">{{message}}</div>
+        <div class="modal__actions">
+            <div class="modal__btn">
+                <app-button (click)="closeModal()" [text]="okButtonText"></app-button>
+            </div>
+            <div class="modal__btn">
+                <app-button (click)="closeModal()" [text]="cancelButtonText"></app-button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-button [text]="open_modal_button_text" (click)="openModal()"></app-button>
