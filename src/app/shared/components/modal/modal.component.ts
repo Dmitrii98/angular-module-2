@@ -10,7 +10,7 @@ export class ModalComponent {
   @Input() message: string = ''
   @Input() okButtonText: string = ''
   @Input() cancelButtonText: string = ''
-  @Input() open_modal_button_text: string = ''
+  @Input() openModalButtonText: string = ''
 
   showModal = false;
   openModal() {
